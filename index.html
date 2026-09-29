@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SIMA · I Encontro Estratégico de Gestão do Ruraltins</title>
+<meta name="description" content="A história do SIMA e sua importância institucional: dados reais do RURATER para a gestão do Ruraltins.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <img src="assets/logo-sima.png" alt="SIMA — Setor de Informação, Monitoramento e Avaliação">
+  <nav class="nav" id="nav" aria-label="Seções da apresentação">
+    <a href="#s1"><b>1</b>Abertura</a>
+    <a href="#s2"><b>2</b>RURATER</a>
+    <a href="#s3"><b>3</b>RuralSolo</a>
+    <a href="#s4"><b>4</b>Gestão regional</a>
+    <a href="#s5"><b>5</b>Compromissos</a>
+  </nav>
+  <img class="logo-rurater" src="assets/logo-rurater.png" alt="RURATER — Sistema de Informação da Assistência Técnica e Extensão Rural">
+</header>
+
+<noscript><p style="padding:6rem 2rem">Esta página precisa de JavaScript para calcular os filtros a partir dos dados do RURATER.</p></noscript>
+
+<main>
+
+<!-- ======================= 1 · ABERTURA ======================= -->
+<section class="sec" id="s1">
+  <div class="hero">
+    <div class="hero-l">
+      <div class="eyebrow">I Encontro Estratégico de Gestão · Ruraltins</div>
+      <h1 class="hero-title">O Ruraltins é a espinha dorsal do <em>campo tocantinense.</em></h1>
+      <p class="lead">A história do SIMA é a história de transformar o que o técnico registra no campo em <strong>evidência para decidir</strong>. Este é o retrato do território que o Ruraltins alcança.</p>
+      <div class="kpis compact k5" id="k1"></div>
+      <div class="card">
+        <h3>RURATER e SIGCAR: dois cadastros, uma agenda de integração</h3>
+        <p class="sub">O SIGCAR é o cadastro oficial, usado na política ambiental. O RURATER é o cadastro de quem o Ruraltins atende.</p>
+        <div id="cmp"></div>
+        <p class="note" id="cmpNote" style="margin-top:.8rem"></p>
+      </div>
+    </div>
+    <div class="card map-wrap">
+      <h3>Presença em todos os municípios</h3>
+      <p class="sub">Cada ponto é um município; o tamanho é o número de propriedades cadastradas no RURATER.</p>
+      <svg id="map" viewBox="0 0 420 560" role="img" aria-label="Mapa de pontos dos municípios do Tocantins, dimensionados pelo número de propriedades cadastradas"></svg>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= 2 · RURATER ======================= -->
+<section class="sec" id="s2">
+  <div class="two">
+    <div class="col-l">
+      <div class="eyebrow">02 · RURATER como base de evidência</div>
+      <h2 class="h-sec">Dado registrado é orçamento garantido e política pública desenhada com precisão.</h2>
+      <p class="lead">O que o técnico registra hoje mostra <strong>o que se produz em cada região</strong> e, com isso, onde investir. O que não é registrado não aparece na hora de decidir.</p>
+      <div class="chips" id="chips2" role="group" aria-label="Escolha a regional"></div>
+      <div class="kpis compact k2c" id="k2"></div>
+      <p class="note" id="carNote"></p>
+    </div>
+    <div class="card">
+      <h3 id="t2">Atividades produtivas predominantes</h3>
+      <p class="sub">Propriedades ativas que declaram cada atividade (uma propriedade pode ter várias). Onde uma atividade predomina, está a demanda por assistência técnica, insumo, crédito e capacitação.</p>
+      <div class="hbars" id="hb2"></div>
+    </div>
+  </div>
+</section>
+<!-- ======================= 3 · RURALSOLO ======================= -->
+<section class="sec" id="s3">
+  <div class="eyebrow">03 · RuralSolo</div>
+  <h2 class="h-sec">Tecnologia que serve o técnico. Gera informação.</h2>
+  <p class="lead">O objetivo é tirar do técnico o peso do <strong>cálculo manual</strong> e devolver a ele tempo produtivo no campo, com uma recomendação de solo mais ágil e mais assertiva.</p>
+
+  <div class="grid versus">
+    <div class="box"><h3>Antes</h3><p>Cálculo manual da recomendação de solo.</p></div>
+    <div class="arrow" aria-hidden="true">→</div>
+    <div class="box after"><h3>Com o RuralSolo</h3><p>Recomendação de solo ágil e assertiva, na mão do técnico.</p></div>
+  </div>
+
+  <div class="grid apps">
+    <article class="card app">
+      <span class="tag on">Aplicativo disponível</span>
+      <h3>RuralSolo</h3>
+      <p>Aplicativo feito pela equipe do SIMA para o dia a dia do técnico.</p>
+      <ul>
+        <li>Análise de solo</li>
+        <li>Calculadora de fertilizantes</li>
+      </ul>
+      <a class="btn" href="https://script.google.com/macros/s/AKfycby9gd6qMGpNNIjFbTCs7wDx27rcsDArk_T-BHbviNfOy9T9WAYdIo4gkawlCcznaVP-/exec" target="_blank" rel="noopener">Abrir o RuralSolo ↗</a>
+    </article>
+    <article class="card app">
+      <span class="tag dev">Em desenvolvimento</span>
+      <h3>Controle de transporte</h3>
+      <p>Próximo aplicativo da família, voltado ao controle de transporte, um tema de logística que a gestão regional conhece bem.</p>
+    </article>
+    <article class="card app" style="background:var(--g900);border-color:var(--g900)">
+      <span class="tag" style="background:rgba(255,255,255,.12);color:#DCEBE0">Princípio</span>
+      <h3 style="color:#FDF3DD">O RuralSolo é um exemplo, não um ponto final.</h3>
+      <p style="color:#DCEBE0">Cada aplicativo nasce de um incômodo real do técnico. A pergunta que orienta o SIMA: o que podemos tirar do caminho de quem está no campo?</p>
+    </article>
+  </div>
+</section>
+
+<!-- ======================= 4 · GESTÃO REGIONAL ======================= -->
+<section class="sec sec-tall" id="s4">
+  <div class="eyebrow">04 · Gestão regional na prática</div>
+  <h2 class="h-sec">O painel mostra onde há gargalo. A conversa com o técnico mostra por quê.</h2>
+
+  <div class="ethic card">
+    <div class="ic">!</div>
+    <p><strong>Como ler esta seção.</strong> O dado sinaliza <strong>gargalo</strong>: logística, falta de veículo, subnotificação. Ele abre uma conversa entre gerência e escritório. Não é ranking nem instrumento de punição: o painel compara escritórios, não pessoas.</p>
+  </div>
+
+  <div class="filters" id="filters">
+    <label>Ano <select id="fAno"></select></label>
+    <label>Regional <select id="fReg"></select></label>
+    <label>Escritório <select id="fEsc"></select></label>
+    <label>Município <select id="fMun"></select></label>
+    <button class="btn ghost" id="fClear" type="button">Limpar filtros</button>
+    <span class="spacer"></span>
+    <span class="scope" id="scope" aria-live="polite"></span>
+  </div>
+
+  <div class="kpis" id="k4"></div>
+
+  <div class="grid charts">
+    <div class="card">
+      <div class="card-head"><div><h3 id="t4a">Atendimentos</h3><p class="sub" id="s4a"></p></div><button class="tbl-btn" data-tbl="4a" type="button">ver como tabela</button></div>
+      <div id="c4a"></div><div id="tb4a" hidden></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><div><h3>Como o atendimento acontece</h3><p class="sub">Distribuição por método de atendimento.</p></div></div>
+      <div class="hbars" id="c4b"></div>
+    </div>
+  </div>
+
+  <div class="grid charts-2">
+    <div class="card">
+      <div class="card-head"><div><h3 id="t4c">Comparação entre escritórios</h3><p class="sub" id="s4c"></p></div><span style="display:flex;gap:.9rem"><button class="tbl-btn" id="ord4c" type="button">ordenar por volume</button><button class="tbl-btn" data-tbl="4c" type="button">ver como tabela</button></span></div>
+      <div id="c4c"></div><div id="tb4c" hidden></div>
+    </div>
+    <div style="display:grid;gap:1.2rem;align-content:start">
+      <div class="card">
+        <h3>Eventos coletivos</h3>
+        <p class="sub" id="s4d"></p>
+        <div class="stats" id="c4d"></div>
+      </div>
+      <div class="callout" id="msg4"></div>
+    </div>
+  </div>
+
+  <p class="note" id="method4"></p>
+</section>
+
+<!-- ======================= 5 · COMPROMISSOS ======================= -->
+<section class="sec" id="s5">
+  <div class="eyebrow">05 · Conclusão</div>
+  <h2 class="h-sec">Três compromissos.</h2>
+
+  <div class="grid pledges">
+    <article class="card pledge">
+      <span class="n">1</span>
+      <span class="who">Para a Alta Direção</span>
+      <h3>Acelerar a integração dos sistemas</h3>
+      <p>RURATER, SIGCAR e os demais sistemas precisam conversar. Dado que não se cruza não vira decisão, e o técnico acaba digitando duas vezes.</p>
+    </article>
+    <article class="card pledge">
+      <span class="n">2</span>
+      <span class="who">Para os Supervisores Regionais</span>
+      <h3>Usar o painel como rotina de gestão</h3>
+      <p>Comparar o volume de atendimento entre escritórios da mesma regional, identificar o gargalo e conversar com quem está no campo antes de o problema virar resultado.</p>
+    </article>
+    <article class="card pledge">
+      <span class="n">3</span>
+      <span class="who">Para todos nós</span>
+      <h3>Lembrar quem está por trás de cada linha</h3>
+      <p>Cada linha do banco de dados é um atendimento a um produtor familiar tocantinense. O dado só vale o quanto essa pessoa é bem atendida.</p>
+    </article>
+  </div>
+
+  <p class="closing" id="closing"></p>
+</section>
+
+</main>
+
+<footer>
+  Fonte: RURATER/SIMA (modelo Ruraltins_arlete_v3, posição de <span id="ftDate"></span>) e SIGCAR (arquivo de 24/07/2026). Apenas dados agregados: nenhum nome, CPF ou contato de produtor ou técnico é exibido.
+</footer>
+
+<div id="tip" role="tooltip"></div>
+<script src="dados.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
